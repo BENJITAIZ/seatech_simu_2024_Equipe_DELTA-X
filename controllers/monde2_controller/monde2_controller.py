@@ -76,42 +76,42 @@ class RosBot(Robot):
         
         if center_pixels > 100:
             if left_pixels < right_pixels:
-                self.front_left_wheel.setVelocity(-5.0)
-                self.front_right_wheel.setVelocity(5.0)
-                self.rear_left_wheel.setVelocity(-5.0)
-                self.rear_right_wheel.setVelocity(5.0)
+                self.front_left_wheel.setVelocity(10)
+                self.front_right_wheel.setVelocity(20)
+                self.rear_left_wheel.setVelocity(10)
+                self.rear_right_wheel.setVelocity(20)
             else:
-                self.front_left_wheel.setVelocity(5.0)
-                self.front_right_wheel.setVelocity(-5.0)
-                self.rear_left_wheel.setVelocity(5.0)
-                self.rear_right_wheel.setVelocity(-5.0)
+                self.front_left_wheel.setVelocity(20)
+                self.front_right_wheel.setVelocity(10)
+                self.rear_left_wheel.setVelocity(20)
+                self.rear_right_wheel.setVelocity(10)
         elif left_pixels > 100:
             if center_pixels < right_pixels:
-                self.front_left_wheel.setVelocity(10.0)
-                self.front_right_wheel.setVelocity(10.0)
-                self.rear_left_wheel.setVelocity(10.0)
-                self.rear_right_wheel.setVelocity(10.0)
+                self.front_left_wheel.setVelocity(20.0)
+                self.front_right_wheel.setVelocity(20.0)
+                self.rear_left_wheel.setVelocity(20.0)
+                self.rear_right_wheel.setVelocity(20.0)
             else:
-                self.front_left_wheel.setVelocity(5.0)
-                self.front_right_wheel.setVelocity(-5.0)
-                self.rear_left_wheel.setVelocity(5.0)
-                self.rear_right_wheel.setVelocity(-5.0)
+                self.front_left_wheel.setVelocity(20)
+                self.front_right_wheel.setVelocity(10)
+                self.rear_left_wheel.setVelocity(20)
+                self.rear_right_wheel.setVelocity(10)
         elif right_pixels > 100:  
             if center_pixels < left_pixels:
-                self.front_left_wheel.setVelocity(10.0)
-                self.front_right_wheel.setVelocity(10.0)
-                self.rear_left_wheel.setVelocity(10.0)
-                self.rear_right_wheel.setVelocity(10.0)
+                self.front_left_wheel.setVelocity(20.0)
+                self.front_right_wheel.setVelocity(20.0)
+                self.rear_left_wheel.setVelocity(20.0)
+                self.rear_right_wheel.setVelocity(20.0)
             else:
-                self.front_left_wheel.setVelocity(-5.0)
-                self.front_right_wheel.setVelocity(5.0)
-                self.rear_left_wheel.setVelocity(-5.0)
-                self.rear_right_wheel.setVelocity(5.0)
+                self.front_left_wheel.setVelocity(10)
+                self.front_right_wheel.setVelocity(20)
+                self.rear_left_wheel.setVelocity(10)
+                self.rear_right_wheel.setVelocity(20)
         else:
-            self.front_left_wheel.setVelocity(10.0)
-            self.front_right_wheel.setVelocity(10.0)
-            self.rear_left_wheel.setVelocity(10.0)
-            self.rear_right_wheel.setVelocity(10.0)
+            self.front_left_wheel.setVelocity(20.0)
+            self.front_right_wheel.setVelocity(20.0)
+            self.rear_left_wheel.setVelocity(20.0)
+            self.rear_right_wheel.setVelocity(20.0)
 
 # create the Robot instance.
 robot = RosBot()
