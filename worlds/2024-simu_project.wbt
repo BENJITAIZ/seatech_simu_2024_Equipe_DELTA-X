@@ -92,6 +92,7 @@ RectangleArena {
 Rosbot {
   translation -16 23 0.03
   rotation 0 0 1 2.354
+  controller "monde2_controller"
 }
 HighwayPole {
   translation -46.6667 88.7436 -0.14
@@ -287,4 +288,5 @@ Mavic2Pro {
 }
 Pioneer3dx {
   translation -15 -15.5 0.1
+  controller "monde1_controller"
 }
