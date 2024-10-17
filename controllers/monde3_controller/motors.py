@@ -32,6 +32,8 @@ class Motors:
 
         self.target_altitude = 1.0
 
+    
+
     def take_off(self):
         """Appliquer une poussée aux moteurs pour le décollage."""
 
@@ -40,7 +42,6 @@ class Motors:
         altitude = self.robot.gps.getValues()[2]
         roll_velocity = self.robot.gyro.getValues()[0]
         pitch_velocity = self.robot.gyro.getValues()[1]
-
 
         roll_disturbance = 0.0
         pitch_disturbance = 0.0
@@ -103,5 +104,7 @@ class Motors:
             self.rear_left_motor.setVelocity(self.stabilized_thrust - move_speed)
             self.front_right_motor.setVelocity(self.stabilized_thrust + move_speed)
             self.rear_right_motor.setVelocity(self.stabilized_thrust + move_speed)
+    def rotate(self, angle_degrees):
+        
 
         print(f"Moving {direction}")

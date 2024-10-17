@@ -19,7 +19,7 @@ class Mavic2Pro(Robot):
         self.gps = self.getDevice('gps')
         self.gps.enable(self.timestep)
 
-        self.imu = self.getDevice('inertial unit')  # Inertial Unit pour l'orientation
+        self.imu = self.getDevice('inertial unit')  
         self.imu.enable(self.timestep)
 
         # Initialisation des moteurs
@@ -31,19 +31,3 @@ class Mavic2Pro(Robot):
             # Appeler la méthode de décollage
             self.motors.take_off()
             self.motors.up()
-
-            # # Lire l'altitude du drone
-            # altitude = self.gps.getValues()[2]
-            # print(f"Altitude: {altitude}")
-
-            # # Monter jusqu'à atteindre une altitude de 2 mètres
-            # if altitude < 2.0:
-            #     self.motors.ascend(altitude_target=2.0)
-
-            # # Stabiliser le drone lorsqu'il atteint 2 mètres
-            # if altitude >= 2.0:
-            #     print("Drone a atteint l'altitude cible, stabilisation.")
-            #     self.motors.stabilize()
-
-            #     # Déplacer doucement le drone vers l'avant
-            #     self.motors.move(direction="forward")
