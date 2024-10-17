@@ -284,7 +284,7 @@ Mavic2Pro {
   translation -47 57 0.1
   rotation 0.03498741723241976 -0.016559173092418868 0.9992505563780786 1.552
   name "Mavic 2 PRO(1)"
-  controller "Monde3_controller"
+  controller "monde3_controller"
 }
 Pioneer3dx {
   translation -15 -15.5 0.1
